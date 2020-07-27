@@ -4,17 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Learn RxJS with Coursetro</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Game of life | RxJs</title>
 
     <style>
         body { font-family: 'Arial'; background: #ececec; }
         ul { list-style-type: none; padding: 20px; }
-        li { padding: 20px; background: white; margin-bottom: 5px; }
     </style>
 </head>
 <body>
-    <ul id="output"></ul>
-    
+    <nav>
+        <div class="nav-header">
+            <ul>
+                <li class="nav-item">
+                    Vanilla
+                </li>
+                <li class="nav-item">
+                    React
+                </li>
+                <li class="nav-item">
+                    Vue?
+                </li>
+                <li class="nav-item">
+                    Wasm/Rust
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="game-of-life">
+        <div class="canvas-container">
+            <canvas
+                id="myCanvas"
+                class="canvas-board"
+                height="700px"
+                width="700px"
+                style="border:1px solid #c3c3c3;"
+            >
+                Your browser does not support the canvas element.
+            </canvas>
+        </div>
+        <div class="controls">
+            <div data-control="resize-up" class="control">
+                +
+            </div>
+            <div data-control="resize-down" class="control">
+                -
+            </div>
+            <div data-control="play-game" class="control toggleControl">
+                <div class="play"></div>
+            </div>
+            <div  data-control="reset-game" class="control">
+                X
+            </div>
+            <div data-control="show-grid" class="control grid">
+            </div>
+        </div>
+    </div>
     <script src="/bundle.js"></script>
 </body>
 </html>

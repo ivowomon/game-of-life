@@ -1,0 +1,51 @@
+html {
+    font-size: 10px;
+}
+.canvas-board {
+    width: 700px;
+    height: 700px;
+}
+.game-of-life {
+    display: flex;
+    flex-direction: column;
+}
+.canvas-container {
+    display: flex;
+    justify-content: center;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+}
+.control {
+    font-size: 80px;
+    width: 100px;
+    text-align: center;
+}
+.play:before {
+    content: '\25BA';
+}
+.toggleControl {
+    display: flex;
+}
+.stop:before {
+    content: '\25AE';
+}
+.grid:before {
+    content: '\2317';
+}
+
+/*nav*/
+nav {
+    background-color: #413f4a;
+}
+.nav-header ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: center;
+}
+.nav-item {
+    padding: 3rem 5rem;
+    color: white;
+}
